@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visor de Noticias Falsas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Noticias Falsas</title>
+    <link rel="stylesheet" href="html.css">
 </head>
+
 <body>
+    <header>
+        <div class="popover-container">
+            <p popover-trigger>Menu</p>
+                <div popover-content>
+                    <a href=""></a>
+                </div>
+                <div popover-content>
+                    
+                </div>
+                <div popover-content>
+                    
+                </div>
+                <div popover-content>
+                    
+                </div>
+                <div popover-content>
+                    
+                </div>
+        </div>
+    </header>
+    <h1>Artículos de Noticias Falsas</h1>
+    <!-- Componente personalizado -->
+    <news-viewer></news-viewer>
 
-  <h1>Artículos de Noticias Falsas</h1>
-  <!-- Componente personalizado -->
-  <news-viewer></news-viewer>
+    <!-- Plantilla para un artículo -->
+    <template id="article-template" class="grid-container">
+        <div class="article grid-item">
+            <h3 class="title"></h3>
+            <p><strong>Autor:</strong> <span class="author"></span></p>
+            <p class="description"></p>
+            <hr>
+            <hr>
+        </div>
+    </template>
 
-  <!-- Plantilla para un artículo -->
-  <template id="article-template">
-    <div class="article">
-      <h3 class="title"></h3>
-      <p><strong>Autor:</strong> <span class="author"></span></p>
-      <p class="description"></p>
-      <hr>
-    </div>
-  </template>
-
-  <script src="news-viewer.js"></script>
+    <script src="news-viewer.js"></script>
 
 </body>
+
 </html>
